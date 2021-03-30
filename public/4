@@ -1,0 +1,61 @@
+<html>
+<head>
+
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<script type="module">
+        import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+    </script><style>.turbo-progress-bar {
+  height: 5px;
+  background-color: green;
+}
+</style>
+
+
+
+<title>Local Locker New York</title>
+</head>
+    <body>
+      <div>
+<div class="uppercase flex gap-4 px-4 border-b mb-4 justify-center text-sm tracking-wider text-white bg-blue-900">        
+    <a href="/" class="px-4 py-2 hover:bg-blue-800 cursor-pointer">Home</a>
+    <a href="https://github.com/lymarrie" class="px-4 py-2 hover:bg-blue-800 cursor-pointer">About</a>
+    <a href="https://www.yext.com" class="px-4 py-2 hover:bg-blue-800 cursor-pointer">Investor Relations</a>
+    <a href="/ceo.html" class="px-4 py-2 hover:bg-blue-800 cursor-pointer">Executive Team</a>
+</div>
+</div>
+      <div class="max-w-screen-md mx-auto text-blue-900">
+        <div class="border-b pb-2 mb-6"><a class="hover:underline" href="/">Home</a> / <span className="font-bold">New York</span></div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+              <h1 class="text-3xl font-bold mb-2 ">Local Locker New York</h1>
+              <div class="mb-4">
+                <h2 class="font-bold">Address:</h2>
+                <p>129 Grand St., New York, NY 10013</p>        
+              </div>
+              
+              <div class="mb-4">
+                <h2 class="font-bold">Hours:</h2>        
+                <p>
+                  
+                      <li><strong>friday</strong>: [map[end:21:30 start:07:00]]</li>
+                  
+                      <li><strong>monday</strong>: [map[end:21:30 start:07:00]]</li>
+                  
+                      <li><strong>saturday</strong>: </li>
+                  
+                      <li><strong>sunday</strong>: </li>
+                  
+                      <li><strong>thursday</strong>: [map[end:21:30 start:07:00]]</li>
+                  
+                      <li><strong>tuesday</strong>: [map[end:21:30 start:07:00]]</li>
+                  
+                      <li><strong>wednesday</strong>: [map[end:21:30 start:07:00]]</li>
+                  
+                </p>
+              </div>
+            </div>   
+            <div>Photos</div>
+          </div>
+        </div>
+    </body>
+</html>

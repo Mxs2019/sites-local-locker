@@ -1,29 +1,40 @@
 {{define "location.url" -}}
-{{.externalEntityId}}.html
+{{.externalEntityId}}
 {{- end}}
 {{define "location.source" -}}
 <html>
 <head>
-<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
+{{ template "scripts" }}
+<title>{{.name}} {{if .geomodifer}}{{ .geomodifer }}{{else}}{{.address.city}}{{end}}</title>
 </head>
     <body>
-    <div>{{template "header"}}</div>
-    <div class="max-w-screen-md mx-auto text-blue-900">
-        <h1 class="text-3xl font-bold mb-2 ">{{.name}} in {{.address.city}}, {{.address.region}}</h1>
-        <div class="mb-4">
-        <h2 class="font-bold">Address:</h2>
-        <p>{{.address.line1}}, {{.address.city}}, {{.address.region}} {{.address.postalCode}}</p>
-        
-        </div>
-        <div class="mb-4">
-        <h2 class="font-bold">Hours:</h2>        
-        <p>
-          {{ range $key, $value := .hours }}
-               <li><strong>{{ $key }}</strong>: {{ $value }}</li>
-          {{ end }}
-        </p>
-        </div>
+      <div>{{template "header"}}</div>
+      <div class="max-w-screen-md mx-auto text-blue-900">
+        <div class="border-b pb-2 mb-6"><a class="hover:underline" href="/">Home</a> / <span className="font-bold">{{if .geomodifer}}{{ .geomodifer }}{{else}}{{.address.city}}{{end}}</span></div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+              <h1 class="text-3xl font-bold mb-2 ">{{.name}} {{if .geomodifer}}{{ .geomodifer }}{{else}}{{.address.city}}{{end}}</h1>
+              <div class="mb-4">
+                <h2 class="font-bold">Address:</h2>
+                <p>{{.address.line1}}, {{.address.city}}, {{.address.region}} {{.address.postalCode}}</p>        
+              </div>
+              {{if .description }}
+                <div class="mb-4">
+                  <h2 class="font-bold">Details:</h2>
+                  <p>{{.description}}</p>        
+                </div>
+              {{end}}
+              <div class="mb-4">
+                <h2 class="font-bold">Hours:</h2>        
+                <p>
+                  {{ range $key, $value := .hours }}
+                      <li><strong>{{ $key }}</strong>: {{ $value.openIntervals }}</li>
+                  {{ end }}
+                </p>
+              </div>
+            </div>   
+            <div>Photos</div>
+          </div>
         </div>
     </body>
 </html>
