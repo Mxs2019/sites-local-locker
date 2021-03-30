@@ -1,34 +1,25 @@
 {
-	"configVersion": "1",
-	"https": true,
-	"liveSite": true,
-	"locales": [
-		"en"
-	],
-	"templateVersion": 8,
-	"requireArtifactBuild": false,
-	"features": [
-		{
-			"name": "Location Page",
-			"streamLabel": "account-3434922/locations",
-			"goTemplateEntityPageSet": {
-				"template": "location.source",
-				"urlTemplate": "location.url"
-			}
-		},
-		{
-			"name": "ceo.html",
-			"staticPage": {
-			  "urlTemplate": "ceo.url",
-			  "template": "ceo.source"
-			}
-		  }
-	],
-	"ci_config": {
-		"output_directories": ["templates", "desktop"],
-		"build_setup_cmd": "echo setup",
-		"build_cmd": "echo hello",
-		"serve_setup_cmd": "echo setup",
-		"serve_cmd": "echo serve"
-	}
+  "configVersion": "1",
+  "https": true,
+  "liveSite": true,
+  "locales": ["en"],
+  "templateVersion": 8,
+  "requireArtifactBuild": false,
+  "features": [
+    {
+      "name": "Location Page",
+      "streamLabel": "account-3447338/locations",
+      "goTemplateEntityPageSet": {
+        "template": "location.source",
+        "urlTemplate": "location.url"
+      }
+    }
+  ],
+  "ci_config": {
+    "output_directories": ["templates", "desktop"],
+    "build_setup_cmd": "echo setup",
+    "build_cmd": "echo hello",
+    "serve_setup_cmd": "echo setup",
+    "serve_cmd": "echo serve"
+  }
 }
