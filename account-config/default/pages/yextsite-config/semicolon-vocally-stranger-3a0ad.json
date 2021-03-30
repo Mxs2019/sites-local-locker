@@ -1,0 +1,23 @@
+{
+  "$id": "semicolon-vocally-stranger-3a0ad",
+  "$schema": "https://schema.yext.com/config/pages/yextsite-config/v1",
+  "siteName": "Sites Local Locker",
+  "repoConfig": "untainted-revolver-dodge-3ddf5",
+  "siteSettings": {
+    "autoDeploy": true,
+    "autoStage": true,
+    "autoPublish": false,
+    "pullRequestsEnabled": false
+  },
+  "branches": [
+    {
+      "name": "main",
+      "stagingCredentials": {
+        "username": "",
+        "password": ""
+      },
+      "envVars": [],
+      "isProductionBranch": true
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "$id": "13",
+  "$schema": "https://schema.yext.com/config/km/entity/v1",
+  "primaryLocale": "en",
+  "content": {
+    "yext/address": {
+      "city": "Brooklyn",
+      "countryCode": "US",
+      "line1": "504 Myrtle Ave.",
+      "postalCode": "11205",
+      "region": "NY"
+    },
+    "yext/categoryIds": [
+      "1476"
+    ],
+    "yext/facebookPageUrl": "https://www.facebook.com/LLClintonHill",
+    "yext/featuredMessage": {
+      "description": "Ask about 1 month free!",
+      "url": "https://booking.localocker.com/ClintonHill/63"
+    },
+    "yext/hours": {
+      "friday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      },
+      "monday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      },
+      "saturday": {
+        "isClosed": true
+      },
+      "sunday": {
+        "isClosed": true
+      },
+      "thursday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      },
+      "tuesday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      },
+      "wednesday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      }
+    },
+    "yext/mainPhone": "+13477897577",
+    "yext/name": "Local Locker",
+    "yext/timezone": "America/New_York"
+  },
+  "entityType": "yext/location",
+  "labels": []
+}

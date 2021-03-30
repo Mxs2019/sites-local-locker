@@ -1,0 +1,38 @@
+{
+  "$id": "c_headerLinks",
+  "$schema": "https://schema.yext.com/config/schema/field-schema/v1",
+  "type": "array",
+  "title": "Header Links",
+  "items": {
+    "properties": {
+      "label": {
+        "maxLength": 255,
+        "title": "Label",
+        "type": "string"
+      },
+      "link": {
+        "maxLength": 2000,
+        "title": "Link",
+        "type": "string"
+      },
+      "linkType": {
+        "enum": [
+          "OTHER",
+          "URL",
+          "PHONE",
+          "EMAIL"
+        ],
+        "enumTitle": {
+          "EMAIL": "Email",
+          "OTHER": "Other",
+          "PHONE": "Phone",
+          "URL": "URL"
+        },
+        "title": "Link Type",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "yext.field_id": "location.custom.3447338.header_links.0"
+}

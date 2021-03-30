@@ -1,0 +1,72 @@
+{
+  "$id": "helpArticle",
+  "$schema": "https://schema.yext.com/config/schema/document-schema/v1",
+  "primaryKey": "entityId",
+  "type": "object",
+  "description": "Use this entity type to store the help articles in your knowledge base.",
+  "properties": {
+    "accountId": {
+      "$ref": "https://schema.yext.com/fields/yext/accountId"
+    },
+    "body": {
+      "$ref": "https://schema.yext.com/fields/yext/body"
+    },
+    "entityId": {
+      "$ref": "https://schema.yext.com/fields/yext/entityId"
+    },
+    "externalArticlePostDate": {
+      "$ref": "https://schema.yext.com/fields/yext/externalArticlePostDate"
+    },
+    "externalArticleUpdateDate": {
+      "$ref": "https://schema.yext.com/fields/yext/externalArticleUpdateDate"
+    },
+    "externalEntityId": {
+      "$ref": "https://schema.yext.com/fields/yext/externalEntityId"
+    },
+    "keywords": {
+      "$ref": "https://schema.yext.com/fields/yext/keywords"
+    },
+    "landingPageUrl": {
+      "$ref": "https://schema.yext.com/fields/yext/landingPageUrl"
+    },
+    "locale": {
+      "$ref": "https://schema.yext.com/fields/yext/locale"
+    },
+    "matchingSearchIds": {
+      "$ref": "https://schema.yext.com/fields/yext/matchingSearchIds"
+    },
+    "name": {
+      "$ref": "https://schema.yext.com/fields/yext/name"
+    },
+    "nudgeEnabled": {
+      "$ref": "https://schema.yext.com/fields/yext/nudgeEnabled"
+    },
+    "primaryConversationContact": {
+      "$ref": "https://schema.yext.com/fields/yext/primaryConversationContact"
+    },
+    "promoted": {
+      "$ref": "https://schema.yext.com/fields/yext/promoted"
+    },
+    "shortDescription": {
+      "$ref": "https://schema.yext.com/fields/yext/shortDescription"
+    },
+    "timezone": {
+      "$ref": "https://schema.yext.com/fields/yext/timezone"
+    },
+    "voteCount": {
+      "$ref": "https://schema.yext.com/fields/yext/voteCount"
+    },
+    "voteSum": {
+      "$ref": "https://schema.yext.com/fields/yext/voteSum"
+    }
+  },
+  "required": [
+    "entityId",
+    "externalEntityId",
+    "locale",
+    "name"
+  ],
+  "title": "Help Article",
+  "titlePlural": "Help Articles",
+  "yext.entity_type_id": 29100
+}

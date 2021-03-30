@@ -1,0 +1,17 @@
+{
+  "$id": "c_associatedProperty",
+  "$schema": "https://schema.yext.com/config/schema/field-schema/v1",
+  "type": "array",
+  "title": "Associated Property",
+  "description": "Use this field to link a unit to a property",
+  "items": {
+    "entityTypeId": [
+      0
+    ],
+    "format": "ref",
+    "refKey": "https://schema.yext.com/fields/yext/entityId",
+    "type": "integer"
+  },
+  "uniqueItems": true,
+  "yext.field_id": "location.custom.3447338.associated_property.0"
+}

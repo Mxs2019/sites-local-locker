@@ -1,0 +1,75 @@
+{
+  "$id": "17",
+  "$schema": "https://schema.yext.com/config/km/entity/v1",
+  "primaryLocale": "en",
+  "content": {
+    "yext/address": {
+      "city": "New York",
+      "countryCode": "US",
+      "line1": "80 Riverside Blvd",
+      "postalCode": "10069",
+      "region": "NY"
+    },
+    "yext/categoryIds": [
+      "1476"
+    ],
+    "yext/facebookPageUrl": "https://www.facebook.com/LL80Riverside/",
+    "yext/featuredMessage": {
+      "description": "Ask about 1 month free!",
+      "url": "https://booking.localocker.com/single-location/80RiversideBlvd/65"
+    },
+    "yext/hours": {
+      "friday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      },
+      "monday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      },
+      "saturday": {
+        "isClosed": true
+      },
+      "sunday": {
+        "isClosed": true
+      },
+      "thursday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      },
+      "tuesday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      },
+      "wednesday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      }
+    },
+    "yext/mainPhone": "+16468634465",
+    "yext/name": "Local Locker",
+    "yext/timezone": "America/New_York"
+  },
+  "entityType": "yext/location",
+  "labels": []
+}

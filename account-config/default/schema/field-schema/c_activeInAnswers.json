@@ -1,0 +1,15 @@
+{
+  "$id": "c_activeInAnswers",
+  "$schema": "https://schema.yext.com/config/schema/field-schema/v1",
+  "type": "string",
+  "title": "Active in Answers",
+  "enum": [
+    "YES",
+    "NO"
+  ],
+  "enumTitle": {
+    "NO": "No",
+    "YES": "Yes"
+  },
+  "yext.field_id": "location.custom.3447338.active_in_answers.0"
+}

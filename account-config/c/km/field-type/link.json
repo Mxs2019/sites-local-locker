@@ -1,0 +1,33 @@
+{
+  "$id": "c_link",
+  "$schema": "https://schema.yext.com/config/km/field-type/v1",
+  "displayName": "Link",
+  "type": {
+    "structType": {
+      "property": [
+        {
+          "name": "to",
+          "displayName": "To",
+          "isRequired": true,
+          "typeId": "yext/string",
+          "type": {
+            "stringType": {
+              "stereotype": "URL"
+            }
+          }
+        },
+        {
+          "name": "label",
+          "displayName": "Label",
+          "isRequired": true,
+          "typeId": "yext/string",
+          "type": {
+            "stringType": {
+              "stereotype": "SIMPLE"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

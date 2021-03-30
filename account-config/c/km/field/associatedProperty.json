@@ -1,0 +1,21 @@
+{
+  "$id": "c_associatedProperty",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "Use this field to link a unit to a property",
+  "displayName": "Associated Property",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "listType": {
+      "typeId": "yext/entityReference",
+      "type": {
+        "entityReferenceType": {
+          "supportedEntityTypeIds": [
+            "yext/location"
+          ]
+        }
+      }
+    }
+  },
+  "typeId": "yext/list"
+}

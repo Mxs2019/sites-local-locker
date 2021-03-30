@@ -1,0 +1,40 @@
+{
+  "$id": "ce_site",
+  "$schema": "https://schema.yext.com/config/schema/document-schema/v1",
+  "primaryKey": "entityId",
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "$ref": "https://schema.yext.com/fields/yext/accountId"
+    },
+    "c_headerLinks": {
+      "$ref": "https://schema.yext.com/fields/account-3447338/c_headerLinks"
+    },
+    "c_slug": {
+      "$ref": "https://schema.yext.com/fields/account-3447338/c_slug"
+    },
+    "entityId": {
+      "$ref": "https://schema.yext.com/fields/yext/entityId"
+    },
+    "externalEntityId": {
+      "$ref": "https://schema.yext.com/fields/yext/externalEntityId"
+    },
+    "locale": {
+      "$ref": "https://schema.yext.com/fields/yext/locale"
+    },
+    "name": {
+      "$ref": "https://schema.yext.com/fields/yext/name"
+    },
+    "richTextDescription": {
+      "$ref": "https://schema.yext.com/fields/yext/richTextDescription"
+    }
+  },
+  "required": [
+    "entityId",
+    "externalEntityId",
+    "locale",
+    "name"
+  ],
+  "title": "Site",
+  "yext.entity_type_id": 66013
+}

@@ -1,0 +1,25 @@
+{
+  "$id": "locations",
+  "$schema": "https://schema.yext.com/config/cloudstream/stream-rule/v1",
+  "source": "knowledgeManager",
+  "destination": "graphmerge",
+  "srcRegion": "nj1",
+  "dstRegion": "gcp-use4a",
+  "fields": [
+    "externalEntityId",
+    "name",
+    "address",
+    "hours",
+    "geomodifier",
+    "description"
+  ],
+  "labels": [
+    "locations",
+    "city"
+  ],
+  "filter": {
+    "entityTypes": [
+      "location"
+    ]
+  }
+}

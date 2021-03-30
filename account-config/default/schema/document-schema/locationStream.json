@@ -1,0 +1,29 @@
+{
+  "$id": "locationStream",
+  "$schema": "https://schema.yext.com/config/schema/document-schema/v1",
+  "primaryKey": "entityId",
+  "type": "object",
+  "properties": {
+    "address": {
+      "$ref": "https://schema.yext.com/fields/yext/address"
+    },
+    "description": {
+      "$ref": "https://schema.yext.com/fields/yext/description"
+    },
+    "entityId": {
+      "$ref": "https://schema.yext.com/fields/yext/entityId"
+    },
+    "externalEntityId": {
+      "$ref": "https://schema.yext.com/fields/yext/externalEntityId"
+    },
+    "geomodifer": {
+      "$ref": "https://schema.yext.com/fields/yext/geomodifier"
+    },
+    "hours": {
+      "$ref": "https://schema.yext.com/fields/yext/hours"
+    },
+    "name": {
+      "$ref": "https://schema.yext.com/fields/yext/name"
+    }
+  }
+}

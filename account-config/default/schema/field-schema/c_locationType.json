@@ -1,0 +1,15 @@
+{
+  "$id": "c_locationType",
+  "$schema": "https://schema.yext.com/config/schema/field-schema/v1",
+  "type": "string",
+  "title": "Location Type",
+  "enum": [
+    "OFFICE",
+    "PROPERTY"
+  ],
+  "enumTitle": {
+    "OFFICE": "Office",
+    "PROPERTY": "Property"
+  },
+  "yext.field_id": "location.custom.3447338.location_type.0"
+}

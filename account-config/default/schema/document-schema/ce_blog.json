@@ -1,0 +1,57 @@
+{
+  "$id": "ce_blog",
+  "$schema": "https://schema.yext.com/config/schema/document-schema/v1",
+  "primaryKey": "entityId",
+  "type": "object",
+  "description": "Used to list out and structure individual blog posts",
+  "properties": {
+    "accountId": {
+      "$ref": "https://schema.yext.com/fields/yext/accountId"
+    },
+    "c_activeInAnswers": {
+      "$ref": "https://schema.yext.com/fields/account-3447338/c_activeInAnswers"
+    },
+    "c_author": {
+      "$ref": "https://schema.yext.com/fields/account-3447338/c_author"
+    },
+    "c_photo": {
+      "$ref": "https://schema.yext.com/fields/account-3447338/c_photo"
+    },
+    "c_primaryCTA": {
+      "$ref": "https://schema.yext.com/fields/account-3447338/c_primaryCTA"
+    },
+    "c_secondaryCTA": {
+      "$ref": "https://schema.yext.com/fields/account-3447338/c_secondaryCTA"
+    },
+    "description": {
+      "$ref": "https://schema.yext.com/fields/yext/description"
+    },
+    "entityId": {
+      "$ref": "https://schema.yext.com/fields/yext/entityId"
+    },
+    "externalEntityId": {
+      "$ref": "https://schema.yext.com/fields/yext/externalEntityId"
+    },
+    "keywords": {
+      "$ref": "https://schema.yext.com/fields/yext/keywords"
+    },
+    "landingPageUrl": {
+      "$ref": "https://schema.yext.com/fields/yext/landingPageUrl"
+    },
+    "locale": {
+      "$ref": "https://schema.yext.com/fields/yext/locale"
+    },
+    "name": {
+      "$ref": "https://schema.yext.com/fields/yext/name"
+    }
+  },
+  "required": [
+    "entityId",
+    "externalEntityId",
+    "locale",
+    "name"
+  ],
+  "title": "Blog",
+  "titlePlural": "Blogs",
+  "yext.entity_type_id": 62547
+}

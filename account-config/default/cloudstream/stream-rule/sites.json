@@ -1,0 +1,21 @@
+{
+  "$id": "sites",
+  "$schema": "https://schema.yext.com/config/cloudstream/stream-rule/v1",
+  "source": "knowledgeManager",
+  "destination": "graphmerge",
+  "srcRegion": "nj1",
+  "dstRegion": "gcp-use4a",
+  "fields": [
+    "name",
+    "c_slug",
+    "richTextDescription"
+  ],
+  "labels": [
+    "sites"
+  ],
+  "filter": {
+    "entityTypes": [
+      "ce_site"
+    ]
+  }
+}

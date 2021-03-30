@@ -1,0 +1,22 @@
+{
+  "$id": "c_linkList",
+  "$schema": "https://schema.yext.com/config/km/field-type/v1",
+  "displayName": "Link List",
+  "type": {
+    "structType": {
+      "property": [
+        {
+          "name": "links",
+          "displayName": "links",
+          "isRequired": false,
+          "typeId": "yext/list",
+          "type": {
+            "listType": {
+              "typeId": "c_link"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

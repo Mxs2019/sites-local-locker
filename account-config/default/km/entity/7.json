@@ -1,0 +1,75 @@
+{
+  "$id": "7",
+  "$schema": "https://schema.yext.com/config/km/entity/v1",
+  "primaryLocale": "en",
+  "content": {
+    "yext/address": {
+      "city": "New York",
+      "countryCode": "US",
+      "line1": "209 W. 80th St.",
+      "postalCode": "10024",
+      "region": "NY"
+    },
+    "yext/categoryIds": [
+      "1476"
+    ],
+    "yext/facebookPageUrl": "https://www.facebook.com/LLW80TH",
+    "yext/featuredMessage": {
+      "description": "Cheap East Village Storage",
+      "url": "https://booking.localocker.com/single-location/West80thSt./51"
+    },
+    "yext/hours": {
+      "friday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      },
+      "monday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      },
+      "saturday": {
+        "isClosed": true
+      },
+      "sunday": {
+        "isClosed": true
+      },
+      "thursday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      },
+      "tuesday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      },
+      "wednesday": {
+        "openIntervals": [
+          {
+            "end": "21:30",
+            "start": "07:00"
+          }
+        ]
+      }
+    },
+    "yext/mainPhone": "+19293951354",
+    "yext/name": "Local Locker",
+    "yext/timezone": "America/New_York"
+  },
+  "entityType": "yext/location",
+  "labels": []
+}

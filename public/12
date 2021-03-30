@@ -1,7 +1,7 @@
 <html>
 <head>
 
-<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
 <script type="module">
         import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
     </script><style>.turbo-progress-bar {
@@ -16,25 +16,35 @@
 </head>
     <body>
       <div>
-<div class="uppercase flex gap-4 px-4 border-b mb-4 justify-center text-sm tracking-wider text-white bg-blue-900">        
-    <a href="/" class="px-4 py-2 hover:bg-blue-800 cursor-pointer">Home</a>
-    <a href="https://github.com/lymarrie" class="px-4 py-2 hover:bg-blue-800 cursor-pointer">About</a>
-    <a href="https://www.yext.com" class="px-4 py-2 hover:bg-blue-800 cursor-pointer">Investor Relations</a>
-    <a href="/ceo.html" class="px-4 py-2 hover:bg-blue-800 cursor-pointer">Executive Team</a>
+<div class="bg-ll-blue">
+<div class="uppercase flex gap-4 mb-4 text-sm tracking-wider text-white  max-w-screen-md mx-auto">        
+    <a href="/" class="px-4 py-3 hover:bg-blue-800 cursor-pointer">Home</a>
+    <a href="https://github.com/lymarrie" class="px-4 py-3 hover:bg-blue-800 cursor-pointer">About</a>
+    <a href="https://www.yext.com" class="px-4 py-3 hover:bg-blue-800 cursor-pointer">Investor Relations</a>
+    <a href="/ceo.html" class="px-4 py-3 hover:bg-blue-800 cursor-pointer">Executive Team</a>
+    </div>
+    </div>
+
 </div>
-</div>
-      <div class="max-w-screen-md mx-auto text-blue-900">
-        <div class="border-b pb-2 mb-6"><a class="hover:underline" href="/">Home</a> / <span className="font-bold">New York</span></div>
+      <div class="flex">
+      <div class="w-12 bg-ll-red"></div>
+      <div class="container w-full">
+        <div class="border-b pb-2 mb-6">
+          <a href="/" class="flex items-center">
+            <div><svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.117 5.14a.337.337 0 000 .499l4.307 4.336c.117.146.351.146.498 0l.557-.586a.337.337 0 000-.498L2.02 5.375 5.48 1.889c.146-.147.146-.381 0-.498L4.922.805c-.147-.147-.381-.147-.498 0L.117 5.14z" fill="#00173C"></path></svg></div>
+            <div class="">&nbsp;Back</div>
+          </a>
+        </div>
         <div class="grid grid-cols-2 gap-4">
           <div>
-              <h1 class="text-3xl font-bold mb-2 ">Local Locker New York</h1>
+              <h1>Local Locker New York</h1>
               <div class="mb-4">
-                <h2 class="font-bold">Address:</h2>
+                <h3>Address:</h3>
                 <p>410 W. 48th St., New York, NY 10036</p>        
               </div>
               
               <div class="mb-4">
-                <h2 class="font-bold">Hours:</h2>        
+                <h3>Hours:</h3>        
                 <p>
                   
                       <li><strong>friday</strong>: [map[end:21:30 start:07:00]]</li>
@@ -56,6 +66,7 @@
             </div>   
             <div>Photos</div>
           </div>
+        </div>
         </div>
     </body>
 </html>

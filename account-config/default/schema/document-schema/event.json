@@ -1,0 +1,148 @@
+{
+  "$id": "event",
+  "$schema": "https://schema.yext.com/config/schema/document-schema/v1",
+  "primaryKey": "entityId",
+  "type": "object",
+  "description": "Have a grand opening or customer appreciation day coming up? Add it to Yext with this entity type.",
+  "properties": {
+    "accountId": {
+      "$ref": "https://schema.yext.com/fields/yext/accountId"
+    },
+    "additionalPromotingLocations": {
+      "$ref": "https://schema.yext.com/fields/yext/additionalPromotingLocations"
+    },
+    "address": {
+      "$ref": "https://schema.yext.com/fields/yext/address"
+    },
+    "ageRange": {
+      "$ref": "https://schema.yext.com/fields/yext/ageRange"
+    },
+    "attendance": {
+      "$ref": "https://schema.yext.com/fields/yext/attendance"
+    },
+    "cityCoordinate": {
+      "$ref": "https://schema.yext.com/fields/yext/cityCoordinate"
+    },
+    "deliverListingsWithoutGeocode": {
+      "$ref": "https://schema.yext.com/fields/yext/deliverListingsWithoutGeocode"
+    },
+    "description": {
+      "$ref": "https://schema.yext.com/fields/yext/description"
+    },
+    "displayCoordinate": {
+      "$ref": "https://schema.yext.com/fields/yext/displayCoordinate"
+    },
+    "dropoffCoordinate": {
+      "$ref": "https://schema.yext.com/fields/yext/dropoffCoordinate"
+    },
+    "entityId": {
+      "$ref": "https://schema.yext.com/fields/yext/entityId"
+    },
+    "eventStatus": {
+      "$ref": "https://schema.yext.com/fields/yext/eventStatus"
+    },
+    "externalEntityId": {
+      "$ref": "https://schema.yext.com/fields/yext/externalEntityId"
+    },
+    "geocodedCoordinate": {
+      "$ref": "https://schema.yext.com/fields/yext/geocodedCoordinate"
+    },
+    "isFreeEvent": {
+      "$ref": "https://schema.yext.com/fields/yext/isFreeEvent"
+    },
+    "isTicketedEvent": {
+      "$ref": "https://schema.yext.com/fields/yext/isTicketedEvent"
+    },
+    "keywords": {
+      "$ref": "https://schema.yext.com/fields/yext/keywords"
+    },
+    "landingPageUrl": {
+      "$ref": "https://schema.yext.com/fields/yext/landingPageUrl"
+    },
+    "linkedLocation": {
+      "$ref": "https://schema.yext.com/fields/yext/linkedLocation"
+    },
+    "locale": {
+      "$ref": "https://schema.yext.com/fields/yext/locale"
+    },
+    "matchingSearchIds": {
+      "$ref": "https://schema.yext.com/fields/yext/matchingSearchIds"
+    },
+    "name": {
+      "$ref": "https://schema.yext.com/fields/yext/name"
+    },
+    "organizerEmail": {
+      "$ref": "https://schema.yext.com/fields/yext/organizerEmail"
+    },
+    "organizerName": {
+      "$ref": "https://schema.yext.com/fields/yext/organizerName"
+    },
+    "organizerPhone": {
+      "$ref": "https://schema.yext.com/fields/yext/organizerPhone"
+    },
+    "performers": {
+      "$ref": "https://schema.yext.com/fields/yext/performers"
+    },
+    "photoGallery": {
+      "$ref": "https://schema.yext.com/fields/yext/photoGallery"
+    },
+    "pickupCoordinate": {
+      "$ref": "https://schema.yext.com/fields/yext/pickupCoordinate"
+    },
+    "routableCoordinate": {
+      "$ref": "https://schema.yext.com/fields/yext/routableCoordinate"
+    },
+    "ticketAvailability": {
+      "$ref": "https://schema.yext.com/fields/yext/ticketAvailability"
+    },
+    "ticketPriceRange": {
+      "$ref": "https://schema.yext.com/fields/yext/ticketPriceRange"
+    },
+    "ticketSaleDateTime": {
+      "$ref": "https://schema.yext.com/fields/yext/ticketSaleDateTime"
+    },
+    "ticketUrl": {
+      "$ref": "https://schema.yext.com/fields/yext/ticketUrl"
+    },
+    "time": {
+      "$ref": "https://schema.yext.com/fields/yext/time"
+    },
+    "timezone": {
+      "$ref": "https://schema.yext.com/fields/yext/timezone"
+    },
+    "venueName": {
+      "$ref": "https://schema.yext.com/fields/yext/venueName"
+    },
+    "walkableCoordinate": {
+      "$ref": "https://schema.yext.com/fields/yext/walkableCoordinate"
+    },
+    "websiteUrl": {
+      "$ref": "https://schema.yext.com/fields/yext/websiteUrl"
+    },
+    "yextDisplayCoordinate": {
+      "$ref": "https://schema.yext.com/fields/yext/yextDisplayCoordinate"
+    },
+    "yextDropoffCoordinate": {
+      "$ref": "https://schema.yext.com/fields/yext/yextDropoffCoordinate"
+    },
+    "yextPickupCoordinate": {
+      "$ref": "https://schema.yext.com/fields/yext/yextPickupCoordinate"
+    },
+    "yextRoutableCoordinate": {
+      "$ref": "https://schema.yext.com/fields/yext/yextRoutableCoordinate"
+    },
+    "yextWalkableCoordinate": {
+      "$ref": "https://schema.yext.com/fields/yext/yextWalkableCoordinate"
+    }
+  },
+  "required": [
+    "entityId",
+    "externalEntityId",
+    "locale",
+    "name",
+    "time"
+  ],
+  "title": "Event",
+  "titlePlural": "Events",
+  "yext.entity_type_id": 3
+}

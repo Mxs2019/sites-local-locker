@@ -1,0 +1,21 @@
+{
+  "$id": "c_associatedUnits",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "Use this field to link units to a property",
+  "displayName": "Associated Units",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "listType": {
+      "typeId": "yext/entityReference",
+      "type": {
+        "entityReferenceType": {
+          "supportedEntityTypeIds": [
+            "ce_unit"
+          ]
+        }
+      }
+    }
+  },
+  "typeId": "yext/list"
+}
