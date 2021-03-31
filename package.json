@@ -4,9 +4,11 @@
   "description": "Another deploy",
   "main": "index.js",
   "scripts": {
-    "start": "yext sites develop",
+    "start": "npm-run-all --parallel watch:webpack watch:gulp watch:sites",
+    "watch:webpack": "webpack --mode development --watch",
+    "watch:gulp": "gulp",
+    "watch:sites": "yext sites develop",
     "build": "webpack --mode production && gulp",
-    "webpack": "webpack --mode development -watch",
     "pull-resources": "yext resources pull ./account-config",
     "apply-resources": "yext resources apply ./account-config",
     "download-streams": "yext sites generate-test-data --label=account-3447338/sites && yext sites generate-test-data --label=account-3447338/locations"
@@ -44,6 +46,7 @@
     "babel-loader": "^8.2.2",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.2.9",
     "react-hot-loader": "^4.13.0",
     "source-map-loader": "^2.0.1",
