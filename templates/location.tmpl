@@ -5,7 +5,12 @@
 <html>
 <head>
 {{ template "scripts" }}
-<title>{{.name}} {{if .geomodifer}}{{ .geomodifer }}{{else}}{{.address.city}}{{end}}</title>
+{{ $geomodifier := .address.city }}
+{{ if .geomodifier }}
+    {{ $geomodifier := .geomodifier }}
+{{ end }}
+
+<title>{{.name}} {{ $geomodifier }} </title>
 </head>
     <body>
       <div class="flex min-h-screen">
@@ -21,7 +26,7 @@
         </div>
         <div class="grid grid-cols-2 gap-4">
           <div>
-              <h1>{{.name}} {{if .geomodifer}}{{ .geomodifer }}{{else}}{{.address.city}}{{end}}</h1>
+              <h1>{{.name}} {{ $geomodifier }}</h1>
               <div class="mb-4">
                 <h3>Address:</h3>
                 <p>{{.address.line1}}, {{.address.city}}, {{.address.region}} {{.address.postalCode}}</p>        

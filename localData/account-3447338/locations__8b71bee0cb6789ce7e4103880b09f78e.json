@@ -9,7 +9,7 @@
 	"description": "Entrance is on the NW corner of 12th \u0026 A, directly to the right of the restaurant \"Smor\". There is a Local Locker sign above the door. After you proceed through the door it's about 10 steps down. If you have any trouble, give us a call and we'll help!",
 	"entityId": 23049924,
 	"externalEntityId": "1",
-	"geomodifer": "East Village",
+	"geomodifier": "East Village",
 	"hours": {
 		"friday": {
 			"openIntervals": [

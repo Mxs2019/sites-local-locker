@@ -12,7 +12,12 @@
 
 
 
-<title>Local Locker East Village</title>
+
+
+    
+
+
+<title>Local Locker New York </title>
 </head>
     <body>
       <div class="flex min-h-screen">
@@ -37,7 +42,7 @@
         </div>
         <div class="grid grid-cols-2 gap-4">
           <div>
-              <h1>Local Locker East Village</h1>
+              <h1>Local Locker New York</h1>
               <div class="mb-4">
                 <h3>Address:</h3>
                 <p>441 E 12th St., New York, NY 10009</p>        

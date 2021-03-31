@@ -16,7 +16,7 @@
     "externalEntityId": {
       "$ref": "https://schema.yext.com/fields/yext/externalEntityId"
     },
-    "geomodifer": {
+    "geomodifier": {
       "$ref": "https://schema.yext.com/fields/yext/geomodifier"
     },
     "hours": {
