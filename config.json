@@ -24,6 +24,7 @@
     }
   ],
   "ci_config": {
+    "base_image_tag": "node-12.18",
     "output_directories": ["templates", "desktop"],
     "build_setup_cmd": "npm install",
     "build_cmd": "npm run build",
