@@ -7,7 +7,7 @@ const style = () => {
     .pipe(
       postcss([
         require("postcss-import"),
-        require("@tailwindcss/jit"),
+        require("tailwindcss"),
         require("autoprefixer"),
       ])
     )
@@ -17,7 +17,12 @@ gulp.task("style", style);
 
 gulp.task("watch", function () {
   return gulp.watch(
-    ["styles/**/*.css", "templates/**/*.tmpl", "tailwind.config.js"],
+    [
+      "styles/**/*.css",
+      "templates/**/*.tmpl",
+      "src/**/*.tsx",
+      "tailwind.config.js",
+    ],
     gulp.series(style)
   );
 });

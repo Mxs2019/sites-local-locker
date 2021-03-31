@@ -1,7 +1,8 @@
 module.exports = {
   purge: [
     "./desktop/**/*.html",
-    "./desktop/**/*.jxs",
+    "./src/**/*.jsx",
+    "./src/**/*.tsx",
     "./templates/**/*.tmpl",
     "./artifact-output/**/*.{html, tmpl}",
   ],

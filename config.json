@@ -25,9 +25,9 @@
   ],
   "ci_config": {
     "output_directories": ["templates", "desktop"],
-    "build_setup_cmd": "echo build_setup_cmd",
-    "build_cmd": "gulp",
-    "watch_cmd": "gulp watch",
+    "build_setup_cmd": "npm install",
+    "build_cmd": "npm run build",
+    "watch_cmd": "echo watch_cmd",
     "serve_setup_cmd": "echo serve_setup_cmd",
     "serve_cmd": "echo serve_cmd"
   }

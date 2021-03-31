@@ -11,14 +11,14 @@
 {{ end }}
 
 <title>{{.name}} {{ $geomodifier }} </title>
-  <script src="locationPage.jsx" type="text/babel"></script>
 
 <script>
    var pageData = {{.}}
 </script>
 </head>
     <body>
-    <div id="react-app"></div>
+    <div id="app"></div>
+    <script src="./bundle.js"></script>
     </body>
 </html>
 {{end}}
