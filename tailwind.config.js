@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./desktop/**/*.html", "./templates/**/*.tmpl"],
+  purge: ["./desktop/**/*.html", "./templates/**/*.tmpl", "./artifact-output/**/*.{html, tmpl}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {

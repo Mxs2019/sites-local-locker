@@ -2,6 +2,10 @@
 <head>
 
 <link href="index.css" rel="stylesheet">
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
 <script type="module">
         import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
     </script><style>.turbo-progress-bar {
@@ -16,61 +20,13 @@
 
 
 <title>Local Locker Brooklyn </title>
+  <script src="locationPage.jsx" type="text/babel"></script>
+
+<script>
+   var pageData = {"address":{"city":"Brooklyn","countryCode":"US","line1":"71 N 7th St","postalCode":"11249","region":"NY"},"entityId":23049926,"externalEntityId":"9","hours":{"friday":{"openIntervals":[{"end":"21:30","start":"07:00"}]},"monday":{"openIntervals":[{"end":"21:30","start":"07:00"}]},"saturday":{"isClosed":true},"sunday":{"isClosed":true},"thursday":{"openIntervals":[{"end":"21:30","start":"07:00"}]},"tuesday":{"openIntervals":[{"end":"21:30","start":"07:00"}]},"wednesday":{"openIntervals":[{"end":"21:30","start":"07:00"}]}},"name":"Local Locker"}
+</script>
 </head>
     <body>
-      <div class="flex min-h-screen">
-      <div class="w-12 bg-ll-red h-full"></div>
-      <div class="w-full">
-        <div>
-<div class="bg-ll-blue">
-<div class="uppercase flex gap-4 mb-4 text-sm tracking-wider text-white  max-w-screen-md mx-auto">        
-    <a href="/" class="px-4 py-3 hover:bg-blue-800 cursor-pointer">Home</a>
-    <a href="https://github.com/lymarrie" class="px-4 py-3 hover:bg-blue-800 cursor-pointer">About</a>
-    <a href="https://www.yext.com" class="px-4 py-3 hover:bg-blue-800 cursor-pointer">Investor Relations</a>
-    <a href="/ceo.html" class="px-4 py-3 hover:bg-blue-800 cursor-pointer">Executive Team</a>
-    </div>
-    </div>
-</div>
-        <div class="container">
-        <div class="border-b pb-2 mb-6">
-          <a href="/" class="flex items-center">
-            <div><svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.117 5.14a.337.337 0 000 .499l4.307 4.336c.117.146.351.146.498 0l.557-.586a.337.337 0 000-.498L2.02 5.375 5.48 1.889c.146-.147.146-.381 0-.498L4.922.805c-.147-.147-.381-.147-.498 0L.117 5.14z" fill="#00173C"></path></svg></div>
-            <div class="">&nbsp;Back</div>
-          </a>
-        </div>
-        <div class="grid grid-cols-2 gap-4">
-          <div>
-              <h1>Local Locker Brooklyn</h1>
-              <div class="mb-4">
-                <h3>Address:</h3>
-                <p>71 N 7th St, Brooklyn, NY 11249</p>        
-              </div>
-              
-              <div class="mb-4">
-                <h3>Hours:</h3>        
-                <p>
-                  
-                      <li><strong>friday</strong>: [map[end:21:30 start:07:00]]</li>
-                  
-                      <li><strong>monday</strong>: [map[end:21:30 start:07:00]]</li>
-                  
-                      <li><strong>saturday</strong>: </li>
-                  
-                      <li><strong>sunday</strong>: </li>
-                  
-                      <li><strong>thursday</strong>: [map[end:21:30 start:07:00]]</li>
-                  
-                      <li><strong>tuesday</strong>: [map[end:21:30 start:07:00]]</li>
-                  
-                      <li><strong>wednesday</strong>: [map[end:21:30 start:07:00]]</li>
-                  
-                </p>
-              </div>
-            </div>   
-            <div>Photos</div>
-            </div>
-          </div>
-        </div>
-        </div>
+    <div id="react-app"></div>
     </body>
 </html>
