@@ -13,14 +13,6 @@
         "template": "location.source",
         "urlTemplate": "location.url"
       }
-    },
-    {
-      "name": "Site Page",
-      "streamLabel": "account-3447338/sites",
-      "goTemplateEntityPageSet": {
-        "template": "site.source",
-        "urlTemplate": "site.url"
-      }
     }
   ],
   "ci_config": {
