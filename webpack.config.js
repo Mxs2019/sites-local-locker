@@ -1,6 +1,6 @@
 const path = require("path");
 
-module.exports = {
+config = {
   // 1
   entry: path.resolve(__dirname, "./src/index.tsx"),
   module: {
@@ -20,8 +20,21 @@ module.exports = {
     extensions: ["*", ".js", ".jsx", ".tsx"],
   },
   // 2
-  output: {
-    path: path.resolve(__dirname, "./.artifact-output/desktop"),
-    filename: "bundle.js",
-  },
+  
 };
+
+module.exports =[
+  {
+    ...config,
+    output: {
+      path: path.resolve(__dirname, "./.artifact-output/desktop"),
+      filename: "bundle.js",
+    },
+  },{
+    ...config,
+    output: {
+      path: path.resolve(__dirname, "./desktop"),
+      filename: "bundle.js",
+    },
+  }
+]
