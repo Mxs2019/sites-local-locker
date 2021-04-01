@@ -1,11 +1,13 @@
 module.exports = {
-  purge: [
+  purge: {
+    enabled: true,
+    content: [
     "./desktop/**/*.html",
     "./src/**/*.jsx",
     "./src/**/*.tsx",
     "./templates/**/*.tmpl",
     "./artifact-output/**/*.{html, tmpl}",
-  ],
+  ]},
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
