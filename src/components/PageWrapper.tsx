@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/index.css";
 import Header from "./Header";
 
 type Props = {

@@ -13,7 +13,7 @@ const Header = ({}: Props) => {
   ];
   return (
     <div className="bg-ll-blue">
-      <div className="uppercase flex gap-4 mb-4 text-sm tracking-wider text-white  max-w-screen-md mx-auto">
+      <div className="uppercase flex flex-col md:flex-row gap-4 mb-4 text-sm tracking-wider text-white  max-w-screen-md mx-auto">
         {links.map((l) => (
           <a
             href="/"
