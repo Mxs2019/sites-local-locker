@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Helmet } from "react-helmet";
 import BackChevron from "./components/BackChevron";
 import Hours from "./components/Hours";
 import PageWrapper from "./components/PageWrapper";
-import {Helmet} from "react-helmet";
 
 const LocationPage = ({ name, address, geomodifier, description, hours }) => {
   const geomodifierMerged = geomodifier ? geomodifier : address.city;
@@ -11,9 +11,11 @@ const LocationPage = ({ name, address, geomodifier, description, hours }) => {
   return (
     <PageWrapper>
       <Helmet>
-        <title>Hello {name} {geomodifierMerged}</title>
+        <title>
+          Hello {name} {geomodifierMerged}
+        </title>
         <meta name="description" content="Helmet application" />
-    </Helmet>
+      </Helmet>
       <div className="border-b pb-2 mb-6 bg-orange-700">
         <a href="/" className="flex items-center">
           <BackChevron />

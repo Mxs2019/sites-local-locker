@@ -1,10 +1,16 @@
+const glob = require("glob");
+
 const path = require("path");
 
 config = {
   // 1
-  entry: {
-    location: path.resolve(__dirname, "./src/location.tsx")
-  },
+  entry: glob.sync("./src/**.tsx").reduce(function (obj, el) {
+    const name = path.parse(el).name;
+    console.log(`Building: ${el}`);
+    obj[name] = el;
+    return obj;
+  }, {}),
+
   module: {
     rules: [
       {
@@ -18,8 +24,8 @@ config = {
       },
       {
         test: /\.css$/i,
-        include: path.resolve(__dirname, 'src'),
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+        include: path.resolve(__dirname, "src"),
+        use: ["style-loader", "css-loader", "postcss-loader"],
       },
     ],
   },
@@ -27,21 +33,21 @@ config = {
     extensions: ["*", ".js", ".jsx", ".tsx"],
   },
   // 2
-  
 };
 
-module.exports =[
+module.exports = [
   {
     ...config,
     output: {
       path: path.resolve(__dirname, "./.artifact-output/desktop"),
       filename: "[name].bundle.js",
     },
-  },{
+  },
+  {
     ...config,
     output: {
       path: path.resolve(__dirname, "./desktop"),
       filename: "[name].bundle.js",
     },
-  }
-]
+  },
+];

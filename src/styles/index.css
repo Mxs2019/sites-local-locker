@@ -2,7 +2,7 @@
 @tailwind components;
 
 .container {
-  @apply max-w-screen-md mx-auto text-ll-blue;
+  @apply max-w-screen-md mx-auto text-ll-blue px-4;
 }
 
 h1 {

@@ -1,32 +1,6 @@
 <html>
-  <head>
-    <link href="index.css" rel="stylesheet">
-
-    <script type="module">
-      import hotwiredTurbo from "https://cdn.skypack.dev/@hotwired/turbo";
-    </script>
-    <style>
-      .turbo-progress-bar {
-        height: 5px;
-        background-color: blue;
-      }
-    </style>
-  </head>
   <body>
-    <div class="max-w-screen-md mx-auto text-ll-blue">
-      <div class="text-3xl font-bold mb-4 mt-4">Welcome to Max's Site</div>
-      <p class="mb-4">
-        Click on a link to a view a location page below. This site uses turbo
-        links so as you navigate around it doesn't do a full page refresh!
-      </p>
-      <div class="grid grid-cols-2 gap-4">
-        <li><a href="/1">Location 1</a></li>
-        <li><a href="/2">Location 2</a></li>
-        <li><a href="/3">Location 3</a></li>
-        <li><a href="/4">Location 4</a></li>
-        <li><a href="/5">Location 5</a></li>
-        <li><a href="/6">Location 6</a></li>
-      </div>
-    </div>
+    <div id="app"></div>
+    <script src="./index.bundle.js"></script>
   </body>
 </html>

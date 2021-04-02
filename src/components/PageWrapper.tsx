@@ -1,7 +1,6 @@
 import React from "react";
+import "../styles/index.css";
 import Header from "./Header";
-import '../styles/index.css';
-import * as Turbo from "@hotwired/turbo"
 
 type Props = {
   //Insert Props Here
