@@ -739,6 +739,11 @@ a:hover {
   color: rgba(30, 58, 138, var(--tw-text-opacity));
 }
 
+.text-ll-blue {
+  --tw-text-opacity: 1;
+  color: rgba(0, 23, 60, var(--tw-text-opacity));
+}
+
 .uppercase {
   text-transform: uppercase;
 }

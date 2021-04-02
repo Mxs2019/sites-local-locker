@@ -1,15 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import BackChevron from "./BackChevron";
-import Hours from "./Hours";
-import PageWrapper from "./PageWrapper";
+import BackChevron from "./components/BackChevron";
+import Hours from "./components/Hours";
+import PageWrapper from "./components/PageWrapper";
+import {Helmet} from "react-helmet";
 
 const LocationPage = ({ name, address, geomodifier, description, hours }) => {
   const geomodifierMerged = geomodifier ? geomodifier : address.city;
 
   return (
     <PageWrapper>
-      <div className="border-b pb-2 mb-6">
+      <Helmet>
+        <title>Hello {name} {geomodifierMerged}</title>
+        <meta name="description" content="Helmet application" />
+    </Helmet>
+      <div className="border-b pb-2 mb-6 bg-orange-700">
         <a href="/" className="flex items-center">
           <BackChevron />
           <div className="">&nbsp;Back</div>
@@ -44,4 +49,5 @@ const LocationPage = ({ name, address, geomodifier, description, hours }) => {
   );
 };
 
-export default LocationPage;
+//@ts-ignore
+ReactDOM.render(<LocationPage {...pageData} />, document.getElementById("app"));

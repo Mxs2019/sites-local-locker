@@ -2,7 +2,9 @@ const path = require("path");
 
 config = {
   // 1
-  entry: path.resolve(__dirname, "./src/index.tsx"),
+  entry: {
+    location: path.resolve(__dirname, "./src/location.tsx")
+  },
   module: {
     rules: [
       {
@@ -13,6 +15,11 @@ config = {
         test: /\.js$/,
         use: ["source-map-loader"],
         enforce: "pre",
+      },
+      {
+        test: /\.css$/i,
+        include: path.resolve(__dirname, 'src'),
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
     ],
   },
@@ -28,13 +35,13 @@ module.exports =[
     ...config,
     output: {
       path: path.resolve(__dirname, "./.artifact-output/desktop"),
-      filename: "bundle.js",
+      filename: "[name].bundle.js",
     },
   },{
     ...config,
     output: {
       path: path.resolve(__dirname, "./desktop"),
-      filename: "bundle.js",
+      filename: "[name].bundle.js",
     },
   }
 ]

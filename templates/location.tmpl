@@ -5,20 +5,13 @@
 <html>
 <head>
 {{ template "scripts" }}
-{{ $geomodifier := .address.city }}
-{{ if .geomodifier }}
-    {{ $geomodifier := .geomodifier }}
-{{ end }}
-
-<title>{{.name}} {{ $geomodifier }} </title>
-
 <script>
    var pageData = {{.}}
 </script>
 </head>
     <body>
     <div id="app"></div>
-    <script src="./bundle.js"></script>
+    <script src="./location.bundle.js"></script>
     </body>
 </html>
 {{end}}
