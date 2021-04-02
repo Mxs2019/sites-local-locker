@@ -1,13 +1,14 @@
+// import * as Turbo from "@hotwired/turbo";
 import React from "react";
 import "../styles/index.css";
 import Header from "./Header";
-
 type Props = {
   //Insert Props Here
   children?: React.ReactNode;
 };
 
 const PageWrapper = ({ children }: Props) => {
+  // console.log(Turbo ? "TURBO LOADED" : "NO TURBO");
   return (
     <div>
       <div className="flex min-h-screen w-full">
