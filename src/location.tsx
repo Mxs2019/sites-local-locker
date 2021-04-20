@@ -10,10 +10,17 @@ import PageWrapper from "./components/PageWrapper";
 import ReviewsWidget from "./components/ReviewsWidget";
 import Units from "./components/Units";
 
-const LocationPage = ({ name, address, geomodifier, description, hours }) => {
+const LocationPage = ({
+  name,
+  address,
+  geomodifier,
+  description,
+  hours,
+  externalEntityId,
+}) => {
   const geomodifierMerged = geomodifier ? geomodifier : address.city;
   const { loading, error, data } = useFetch<AdminResponseFormat>(
-    `https://admin.localocker.com/location/${49}/`,
+    `https://admin.localocker.com/location/${externalEntityId}/`,
     {},
     []
   );

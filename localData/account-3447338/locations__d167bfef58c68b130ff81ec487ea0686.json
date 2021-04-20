@@ -1,0 +1,13 @@
+{
+	"address": {
+		"city": "New York",
+		"countryCode": "US",
+		"line1": "60 West 23rd Street",
+		"line2": "Apt 449",
+		"postalCode": "10010",
+		"region": "NY"
+	},
+	"entityId": 23368481,
+	"externalEntityId": "3478863464741634133",
+	"name": "Local Locker Max's House"
+}

@@ -38,7 +38,7 @@ a {
 }
 
 .btn-secondary {
-  @apply text-ll-red border-ll-red hover:bg-red-100 focus:ring-2 focus:ring-ll-red focus:bg-red-100;
+  @apply text-ll-red border-ll-red hover:bg-white focus:ring-2 focus:ring-ll-red focus:bg-red-100;
 }
 
 .btn-link {

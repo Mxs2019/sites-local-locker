@@ -3,6 +3,7 @@ import React from "react";
 import { FaRegStar, FaStar } from "react-icons/fa";
 import Skeleton from "react-loading-skeleton";
 import { ReviewsResponse } from "../../types";
+import Error from "./Error";
 
 type Props = {
   //Insert Props Here
@@ -60,7 +61,8 @@ const ReviewsWidget = ({ className, reviewData, loading, error }: Props) => {
           ))}
         </div>
       )}
-      {!loading && !error && (
+      {error && <Error>Error Loading Reviews. Try Refreshing the page</Error>}
+      {reviewData && (
         <div>
           <div>
             {reviewData?.reviews.map((r) => (
