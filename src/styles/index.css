@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   @apply max-w-screen-md mx-auto text-ll-blue px-4;
 }
@@ -23,6 +27,22 @@ p {
 
 a {
   @apply hover:underline;
+}
+
+.btn {
+  @apply border px-4 py-2 rounded transform hover:-translate-y-1 ease-in-out transition-all cursor-pointer hover:shadow-lg block text-center focus:outline-none;
+}
+
+.btn-primary {
+  @apply bg-ll-red  text-white;
+}
+
+.btn-secondary {
+  @apply text-ll-red border-ll-red hover:bg-red-50;
+}
+
+.btn-link {
+  @apply hover:bg-gray-50;
 }
 
 @tailwind utilities;

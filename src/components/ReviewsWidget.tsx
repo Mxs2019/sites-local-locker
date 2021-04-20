@@ -1,6 +1,7 @@
 import classnames from "classnames";
 import React from "react";
 import { FaRegStar, FaStar } from "react-icons/fa";
+import Skeleton from "react-loading-skeleton";
 import { ReviewsResponse } from "../../types";
 
 type Props = {
@@ -34,8 +35,9 @@ const stringToRating = (
 const ReviewsWidget = ({ className, reviewData, loading, error }: Props) => {
   return (
     <div className={classnames(className)}>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between border-b mt-8">
         <h2>Customer Reviews</h2>
+        {loading && <Skeleton width={200} />}
         {reviewData && (
           <div className="flex items-center">
             <ReviewStars rating={reviewData.average_rating_all_locations} />
@@ -43,12 +45,26 @@ const ReviewsWidget = ({ className, reviewData, loading, error }: Props) => {
           </div>
         )}
       </div>
-      {loading && <div>spinner</div>}
+      {loading && (
+        <div>
+          {[...Array(5)].map((r) => (
+            <div className="flex border-b py-2">
+              <div className="w-1/3">
+                <Skeleton width={100} />
+              </div>
+              <div className="w-2/3 ml-2">
+                <Skeleton width={100} />
+                <Skeleton count={3} className="mt-1" />
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
       {!loading && !error && (
         <div>
           <div>
             {reviewData?.reviews.map((r) => (
-              <div className="flex mb-2 border-b pb-2">
+              <div className="flex border-b py-2">
                 <div className="w-1/3">{r.reviewer.displayName}</div>
                 <div className="w-2/3 ml-2">
                   <ReviewStars rating={stringToRating(r.starRating)} />
