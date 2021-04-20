@@ -1,6 +1,7 @@
 const glob = require("glob");
 
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 config = {
   // 1
@@ -32,6 +33,14 @@ config = {
   resolve: {
     extensions: ["*", ".js", ".jsx", ".tsx"],
   },
+  // plugins: [
+  //   ...glob.sync("./src/**.tsx").map((el) => {
+  //     const name = path.parse(el).name;
+  //     return new HtmlWebpackPlugin({
+  //       filename: `${name}.html`,
+  //     });
+  //   }),
+  // ],
   // 2
 };
 

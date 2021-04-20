@@ -1,12 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Helmet } from "react-helmet";
+import { useFetch } from "use-http";
+import { AdminResponseFormat } from "../types";
 import BackChevron from "./components/BackChevron";
 import Hours from "./components/Hours";
 import PageWrapper from "./components/PageWrapper";
+import ReviewsWidget from "./components/ReviewsWidget";
 
 const LocationPage = ({ name, address, geomodifier, description, hours }) => {
   const geomodifierMerged = geomodifier ? geomodifier : address.city;
+  const { loading, error, data } = useFetch<AdminResponseFormat>(
+    `https://admin.localocker.com/location/${49}/`,
+    {},
+    []
+  );
 
   return (
     <PageWrapper>
@@ -47,6 +55,12 @@ const LocationPage = ({ name, address, geomodifier, description, hours }) => {
         </div>
         <div>Photos</div>
       </div>
+
+      <ReviewsWidget
+        reviewData={data?.all_location_reviews_and_rating}
+        loading={loading}
+        error={error}
+      />
     </PageWrapper>
   );
 };
