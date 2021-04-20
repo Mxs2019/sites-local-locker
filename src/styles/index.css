@@ -6,7 +6,7 @@ html {
 }
 
 .container {
-  @apply max-w-screen-md mx-auto text-ll-blue px-4;
+  @apply max-w-screen-lg mx-auto text-ll-blue px-4;
 }
 
 h1 {
@@ -34,7 +34,7 @@ a {
 }
 
 .btn-primary {
-  @apply bg-ll-red  text-white;
+  @apply bg-ll-red  text-white border-ll-red;
 }
 
 .btn-secondary {

@@ -79,7 +79,7 @@ const Units = ({ className, unitCategories }: Props) => {
                         return a.status === "booked" ? 1 : -1;
                       })
                       .map((uc, i) => (
-                        <tr key={uc.id}>
+                        <tr key={uc.id} className="hover:bg-gray-100">
                           <td className="px-6 py-6 whitespace-nowrap text-2xl text-ll-blue">
                             {uc.size}
                           </td>
