@@ -64,9 +64,11 @@ const ReviewsWidget = ({ className, reviewData, loading, error }: Props) => {
         <div>
           <div>
             {reviewData?.reviews.map((r) => (
-              <div className="flex border-b py-2">
-                <div className="w-1/3">{r.reviewer.displayName}</div>
-                <div className="w-2/3 ml-2">
+              <div className="flex sm:flex-row flex-col border-b py-2">
+                <div className="sm:w-1/3 mb-1 sm:mb-0">
+                  {r.reviewer.displayName}
+                </div>
+                <div className="sm:w-2/3 sm:ml-2">
                   <ReviewStars rating={stringToRating(r.starRating)} />
                   <p className="mt-2">{r.comment}</p>
                 </div>

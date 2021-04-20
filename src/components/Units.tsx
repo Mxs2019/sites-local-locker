@@ -34,7 +34,64 @@ const Units = ({ className, unitCategories }: Props) => {
       <div className="">
         <h2>Available Units</h2>
       </div>
-      <div className="flex flex-col">
+      <div className="md:hidden">
+        {!unitCategories &&
+          [...Array(3)].map((_, i) => (
+            <div key={i} className="bg-gray-50 p-3 border rounded mb-4">
+              <div className="text-2xl text-ll-blue mb-2">
+                <Skeleton width={120} />
+              </div>
+              <div>
+                <Skeleton width={100} />
+              </div>
+
+              <div className=" text-sm text-ll-blue mt-4">
+                <Skeleton />
+              </div>
+            </div>
+          ))}
+        {unitCategories &&
+          unitCategories
+            .sort((a, b) => {
+              return a.status === "booked" ? 1 : -1;
+            })
+            .map((uc, i) => (
+              <div key={uc.id} className="bg-gray-50 p-3 border rounded mb-4">
+                <div className="text-2xl text-ll-blue mb-2">{uc.size}</div>
+                <div className="flex">
+                  <div className="text-ll-blue">
+                    ${parseFloat(uc.price).toFixed(0)}
+                  </div>
+                  <div className="text-xs font-medium tracking-wider ml-2">
+                    {uc.status === "available" && (
+                      <div className="px-2 py-1 rounded-md border  border-green-300 bg-green-50 text-green-900 inline-block">
+                        Available
+                      </div>
+                    )}
+                    {uc.status === "booked" && (
+                      <div className="px-2 py-1 rounded-md border border-gray-300 bg-gray-50 text-gray-400  inline-block">
+                        Booked
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                <div className=" text-sm text-ll-blue mt-4">
+                  {uc.status === "available" && (
+                    <a href="#" className="btn btn-secondary">
+                      Book Now
+                    </a>
+                  )}
+                  {uc.status === "booked" && (
+                    <a href="#" className="btn btn-link">
+                      Join Waitlist
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
+      </div>
+      <div className="hidden md:flex md:flex-col">
         <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
             <div className="overflow-hidden border-b border-gray-200 border-t">

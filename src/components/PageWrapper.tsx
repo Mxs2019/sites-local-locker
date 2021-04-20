@@ -12,7 +12,7 @@ const PageWrapper = ({ children }: Props) => {
   return (
     <div>
       <div className="flex min-h-screen w-full">
-        <div className="w-12 min-h-screen bg-ll-red"></div>
+        <div className="w-1 sm:w-4 md:w-8 lg:w-12 min-h-screen bg-ll-red"></div>
         <div className="w-full">
           <Header />
           <div className="">{children}</div>

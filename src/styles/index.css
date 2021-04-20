@@ -34,15 +34,15 @@ a {
 }
 
 .btn-primary {
-  @apply bg-ll-red  text-white border-ll-red;
+  @apply bg-ll-red  text-white border-ll-red focus:ring-2 focus:bg-red-900;
 }
 
 .btn-secondary {
-  @apply text-ll-red border-ll-red hover:bg-red-50;
+  @apply text-ll-red border-ll-red hover:bg-red-100 focus:ring-2 focus:ring-ll-red focus:bg-red-100;
 }
 
 .btn-link {
-  @apply hover:bg-gray-50;
+  @apply hover:bg-gray-100 focus:ring-2 focus:bg-gray-100;
 }
 
 @tailwind utilities;

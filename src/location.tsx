@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import ReactDOM from "react-dom";
 import { Helmet } from "react-helmet";
+import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { useFetch } from "use-http";
 import { AdminResponseFormat } from "../types";
 import BackChevron from "./components/BackChevron";
@@ -35,8 +36,8 @@ const LocationPage = ({ name, address, geomodifier, description, hours }) => {
               <div className="">&nbsp;Back</div>
             </a>
           </div>
-          <div className="flex">
-            <div className="w-2/3">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-2/3">
               <h1>
                 {name} {geomodifierMerged}
               </h1>
@@ -53,22 +54,27 @@ const LocationPage = ({ name, address, geomodifier, description, hours }) => {
                   <p>{description}</p>
                 </div>
               )}
-              <div className="flex gap-4 mb-4">
+              <div className="flex sm:flex-row sm:flex-wrap flex-col gap-2 mb-4">
                 <button
                   className="btn btn-primary"
                   onClick={() => unitsRef.current.scrollIntoView()}
                 >
                   See Prices
                 </button>
+                <div className="btn btn-secondary flex items-center justify-center">
+                  <FaPhone className="mr-2" /> (203) 273-8840
+                </div>
                 <div className="btn btn-secondary">Book a Tour</div>
-                <div className="btn btn-secondary">Get Directions</div>
+                <div className="btn btn-secondary flex items-center justify-center">
+                  <FaMapMarkerAlt className="mr-2" /> Directions
+                </div>
               </div>
               <div className="mb-4">
                 <h3>Hours:</h3>
                 <Hours hours={hours} />
               </div>
             </div>
-            <div className="w-1/3">Photos</div>
+            <div className="md:w-1/3">Photos</div>
           </div>
         </div>
       </div>
