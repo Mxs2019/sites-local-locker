@@ -95,8 +95,8 @@ const IndexPage = () => {
   };
 
   useEffect(() => {
-    setQuery(searchedQuery);
-    runSearch(searchedQuery);
+    setQuery(searchedQuery ?? "");
+    runSearch(searchedQuery ?? "");
   }, []);
 
   return (
