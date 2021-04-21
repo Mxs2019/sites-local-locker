@@ -20,8 +20,26 @@ config = {
       },
       {
         test: /\.js$/,
-        use: ["source-map-loader"],
         enforce: "pre",
+        use: [
+          {
+            loader: "source-map-loader",
+            options: {
+              filterSourceMappingUrl: (url, resourcePath) => {
+                //  console.log({ url, resourcePath }) example:
+                // {
+                //  url: 'index.js.map',
+                //  resourcePath: '/repos/xlib-wsl/common/temp/node_modules/.pnpm/https-proxy-agent@5.0.0/node_modules/https-proxy-agent/dist/index.js'
+                // }
+
+                if (/.*\/node_modules\/.*/.test(resourcePath)) {
+                  return false;
+                }
+                return true;
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.css$/i,
