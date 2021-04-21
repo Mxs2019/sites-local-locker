@@ -76,10 +76,12 @@ const LocationPage = ({
                   <FaMapMarkerAlt className="mr-2" /> Directions
                 </div>
               </div>
-              <div className="mb-4">
-                <h3>Hours:</h3>
-                <Hours hours={hours} />
-              </div>
+              {hours && (
+                <div className="mb-4">
+                  <h3>Hours:</h3>
+                  <Hours hours={hours} />
+                </div>
+              )}
             </div>
             <div className="md:w-1/3">Photos</div>
           </div>
