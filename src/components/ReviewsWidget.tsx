@@ -48,8 +48,8 @@ const ReviewsWidget = ({ className, reviewData, loading, error }: Props) => {
       </div>
       {loading && (
         <div>
-          {[...Array(5)].map((r) => (
-            <div className="flex border-b py-2">
+          {[...Array(5)].map((r, i) => (
+            <div className="flex border-b py-2" key={i}>
               <div className="w-1/3">
                 <Skeleton width={100} />
               </div>
@@ -66,7 +66,10 @@ const ReviewsWidget = ({ className, reviewData, loading, error }: Props) => {
         <div>
           <div>
             {reviewData?.reviews.map((r) => (
-              <div className="flex sm:flex-row flex-col border-b py-2">
+              <div
+                className="flex sm:flex-row flex-col border-b py-2"
+                key={r.reviewId}
+              >
                 <div className="sm:w-1/3 mb-1 sm:mb-0">
                   {r.reviewer.displayName}
                 </div>
