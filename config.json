@@ -5,16 +5,6 @@
   "locales": ["en"],
   "templateVersion": 8,
   "requireArtifactBuild": false,
-  "features": [
-    {
-      "name": "Location Page",
-      "streamLabel": "account-3447338/locations",
-      "goTemplateEntityPageSet": {
-        "template": "location.source",
-        "urlTemplate": "location.url"
-      }
-    }
-  ],
   "ci_config": {
     "base_image_tag": "node-12.18",
     "output_directories": ["templates", "desktop"],

@@ -1,5 +1,0 @@
-{
-  "$id": "untainted-revolver-dodge-3ddf5",
-  "$schema": "https://schema.yext.com/config/pages/repository/v1",
-  "targetRepoName": "${{sitesLocalLocker_targetRepo}}"
-}

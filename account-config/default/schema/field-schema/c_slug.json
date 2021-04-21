@@ -1,7 +1,0 @@
-{
-  "$id": "c_slug",
-  "$schema": "https://schema.yext.com/config/schema/field-schema/v1",
-  "type": "string",
-  "title": "Slug",
-  "yext.field_id": "location.custom.3447338.slug.0"
-}

@@ -10,6 +10,18 @@ import PageWrapper from "./components/PageWrapper";
 import ReviewsWidget from "./components/ReviewsWidget";
 import Units from "./components/Units";
 
+export const streamConfiguration = {
+  source: "knowledgeGraph",
+  fields: ["id", "uid", "name", "address", "hours"],
+  filter: {
+    entityTypes: ["event"],
+  },
+};
+
+export const generateURL = (data) => {
+  return data.slug;
+};
+
 const LocationPage = ({
   name,
   address,

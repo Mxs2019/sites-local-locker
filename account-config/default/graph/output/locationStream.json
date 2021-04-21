@@ -1,8 +1,0 @@
-{
-  "$id": "locationStream",
-  "$schema": "https://schema.yext.com/config/graph/output/v1",
-  "schema": "https://schema.yext.com/schemas/account-3447338/locationStream",
-  "includeSchema": false,
-  "label": "locations",
-  "destination": "pages"
-}

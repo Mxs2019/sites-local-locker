@@ -1,8 +1,0 @@
-{
-  "$id": "siteStream",
-  "$schema": "https://schema.yext.com/config/graph/output/v1",
-  "schema": "https://schema.yext.com/schemas/account-3447338/siteStream",
-  "includeSchema": false,
-  "label": "sites",
-  "destination": "pages"
-}

@@ -1,7 +1,0 @@
-{
-  "$id": "c_author",
-  "$schema": "https://schema.yext.com/config/schema/field-schema/v1",
-  "type": "string",
-  "title": "Author",
-  "yext.field_id": "location.custom.3447338.author.0"
-}
