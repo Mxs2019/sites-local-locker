@@ -2,7 +2,7 @@ import { provideCore, VerticalSearchResponse } from "@yext/answers-core";
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { Helmet } from "react-helmet";
-import { FaMapMarkerAlt, FaPhone, FaSearch } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone, FaSearch, FaTimes } from "react-icons/fa";
 import Skeleton from "react-loading-skeleton";
 import {
   QueryParamProvider,
@@ -124,6 +124,9 @@ const IndexPage = () => {
                     onChange={(e) => setQuery(e.target.value)}
                     value={query}
                   />
+                  <button onClick={() => setQuery("")}>
+                    <FaTimes className="text-gray-500" />
+                  </button>
                 </form>
               </div>
               <div className="mt-2">
